@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #36aeee;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.section {
+    background: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 1200px;
+}
+
+.section h2 {
+    color: #36aeee;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+/* Información Personal */
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-content h3 {
+    color: #36aeee;
+    margin-bottom: 0.5rem;
+}
+
+/* Grid para cursos y profesores */
+.courses-grid,
+.teachers-grid,
+.companeros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.course-card,
+.teacher-card,
+.companero-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.course-card h3,
+.teacher-card h3,
+.companero-card h3 {
+    color: #36aeee;
+    margin-bottom: 0.5rem;
+}
+
+/* Botones */
+.linkedin-btn,
+.website-btn {
+    display: inline-block;
+    background: #36aeee;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    transition: background 0.3s;
+}
+
+.linkedin-btn:hover,
+.website-btn:hover {
+    background: #36aeee;
+}
+
+.website-btn {
+    background: #36aeee;
+}
+
+.website-btn:hover {
+    background: #36aeee;
+}
+
+/* Footer */
+footer {
+    background: #36aeee;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
