@@ -46,10 +46,11 @@ header h1 {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #36aeee;
 }
 
 .info-content h3 {
@@ -57,7 +58,7 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Grid para cursos y profesores */
+/* Grid general */
 .courses-grid,
 .teachers-grid,
 .companeros-grid {
@@ -98,15 +99,7 @@ header h1 {
 
 .linkedin-btn:hover,
 .website-btn:hover {
-    background: #36aeee;
-}
-
-.website-btn {
-    background: #36aeee;
-}
-
-.website-btn:hover {
-    background: #36aeee;
+    background: #1f8acb;
 }
 
 /* Footer */
@@ -124,7 +117,7 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .section {
         margin: 1rem;
         padding: 1rem;
